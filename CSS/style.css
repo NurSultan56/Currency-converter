@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Roboto;
+}
+
+#main-container {
+    width: 641px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#header h1 {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#converter-container {
+    display: flex;
+    flex-direction: row;
+    gap: 123px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 12px;
+    color: #9F9F9F;
+    margin-top: 41px;
+}
+
+.currency-buttons {
+    display: flex;
+    flex-direction: row;
+    border: 1px #E5E5E5 solid;
+    border-radius: 3px;
+    margin-top: 11px;
+    width: 259px;
+}
+
+.button {
+    width: 65px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    border-right: 1px #E5E5E5 solid;
+    font-size: 12px;
+    font-weight: 400px;
+    color: #C6C6C6;
+}
+
+.button:hover{
+    background-color: #833AE0;
+    color: white;
+}
+
+.button:last-child {
+    border: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.button:first-child {
+    border: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.input-container {
+    width: 259px;
+    height: 102px;
+    border-radius: 3px;
+    border: 1px #E5E5E5 solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.input {
+    font-size: 36px;
+    font-weight: 700;
+    padding-left: 14px;
+    padding-top: 11px;
+    border: none;
+    outline: none;
+}
+
+.currency-description {
+    font-weight: 400;
+    font-size: 12px;
+    color: #C6C6C6;
+    margin: 0px 0px 14px 16px;
+}
