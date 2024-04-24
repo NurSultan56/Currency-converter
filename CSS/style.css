@@ -53,10 +53,10 @@ body {
     color: #C6C6C6;
 }
 
-.button:hover{
+/* .button:hover{
     background-color: #833AE0;
     color: white;
-}
+} */
 
 .button:last-child {
     border: none;
@@ -68,6 +68,11 @@ body {
     border: none;
     border-top-left-radius: 3px;
     border-bottom-left-radius: 3px;
+}
+
+.button-selected {
+    background-color: #833AE0;
+    color: white;
 }
 
 .input-container {
