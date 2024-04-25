@@ -46,6 +46,8 @@ fromInput.addEventListener('keyup', () => {
                     resultInput.value = 0
                     break
                 default:
+                    if (data != undefined)
+                    {
                     const buttonSelectedTo = document.querySelector('#to-container .button-selected').textContent
                     const buttonSelectedFrom = document.querySelector('#from-container .button-selected').textContent
                     resultInput.value = Number(fromInput.value) * data[`${buttonSelectedTo.toLowerCase()}`]
@@ -60,6 +62,7 @@ fromInput.addEventListener('keyup', () => {
                         .catch(error => {
                             console.log(error)
                         })
+                    }
             }
         })
         .catch(error => {
@@ -91,6 +94,8 @@ buttonFrom.forEach((item) => {
                     resultInput.value = 0
                     break
                 default:
+                    if (data != undefined)
+                    {
                     const buttonSelectedTo = document.querySelector('#to-container .button-selected').textContent
                     const buttonSelectedFrom = document.querySelector('#from-container .button-selected').textContent
                     resultInput.value = Number(fromInput.value) * data[`${buttonSelectedTo.toLowerCase()}`]
@@ -105,6 +110,7 @@ buttonFrom.forEach((item) => {
                         .catch(error => {
                             console.log(error)
                         })
+                    }
             }
         })
         .catch(error => {
@@ -136,6 +142,8 @@ buttonResult.forEach((item) => {
                     resultInput.value = 0
                     break
                 default:
+                    if (data != undefined)
+                    {
                     const buttonSelectedTo = document.querySelector('#to-container .button-selected').textContent
                     const buttonSelectedFrom = document.querySelector('#from-container .button-selected').textContent
                     resultInput.value = Number(fromInput.value) * data[`${buttonSelectedTo.toLowerCase()}`]
@@ -150,6 +158,7 @@ buttonResult.forEach((item) => {
                         .catch(error => {
                             console.log(error)
                         })
+                    }
             }
         })
         .catch(error => {console.log(error)})
